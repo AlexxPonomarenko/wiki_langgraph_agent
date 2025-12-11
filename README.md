@@ -39,20 +39,20 @@
 
 app/
 
-├──main.py         # FastAPI-приложение и эндпоинт /ask
+├── main.py         # FastAPI-приложение и эндпоинт /ask
 
-├──graph.py        # описание графа агента на LangGraph
+├── graph.py        # описание графа агента на LangGraph
 
-├──llm.py          # работа с OpenAI API
+├── llm.py          # работа с OpenAI API
 
-├──wiki_client.py  # запросы к Википедии и очистка HTML
+├── wiki_client.py  # запросы к Википедии и очистка HTML
 
-└──model.py        # кроссэнкодер для работы агента
-test_agent.py      # файл для тестирования агента
+└── model.py        # кроссэнкодер для работы агента
+test_agent.py       # файл для тестирования агента
 
-requirements.txt   # зависимости проекта
+requirements.txt    # зависимости проекта
 
-.env               # файл, хранящий ключ OPENAI_API_KEY
+.env                # файл, хранящий ключ OPENAI_API_KEY
 
 ---
 
@@ -60,17 +60,17 @@ requirements.txt   # зависимости проекта
 
 ### 1. Клонировать репозиторий
 
-git clone https://github.com/AlexxPonomarenko/wiki_langgraph_agent.git
-cd wiki_langgraph_agent
+```git clone https://github.com/AlexxPonomarenko/wiki_langgraph_agent.git```
+```cd wiki_langgraph_agent```
 
 ### 2. Установить зависимости
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 ### 3. Указать ключ OpenAI
 
 Создайте файл .env в корне проекта и добавьте в него:
-OPENAI_API_KEY=ваш_ключ_от_OpenAI
+```OPENAI_API_KEY=ваш_ключ_от_OpenAI```
 
 Ключ используется модулем llm.py для обращения к модели.
 
@@ -81,8 +81,7 @@ OPENAI_API_KEY=ваш_ключ_от_OpenAI
 ```python -m app.main```
 
 Дождитесь, когда появится 
-"INFO:        Application startup complete."
+```"INFO:        Application startup complete."```
 
 В новом терминале запустите файл с тестовым вопросом:
-
-python .\test_agent.py
+```python .\test_agent.py```
