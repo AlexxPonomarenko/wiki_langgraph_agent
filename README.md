@@ -78,10 +78,11 @@ OPENAI_API_KEY=ваш_ключ_от_OpenAI
 
 Для запуска локального API выполните:
 
-python -m app.main
+```python -m app.main```
 
 Дождитесь, когда появится 
-"INFO:     Application startup complete."
+"INFO:        Application startup complete."
 
 В новом терминале запустите файл с тестовым вопросом:
+
 python .\test_agent.py
