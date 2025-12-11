@@ -38,8 +38,11 @@
 ## Структура проекта
 
 app/
+
 ├──main.py         # FastAPI-приложение и эндпоинт /ask
-  graph.py        # описание графа агента на LangGraph
+
+├──graph.py        # описание графа агента на LangGraph
+
   llm.py          # работа с OpenAI API
   wiki_client.py  # запросы к Википедии и очистка HTML
   model.py        # кроссэнкодер для работы агента
