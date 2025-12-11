@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+httpx
+langgraph
+langchain-core
+langchain-openai
+python-dotenv
+sentence-transformers==2.7.0
